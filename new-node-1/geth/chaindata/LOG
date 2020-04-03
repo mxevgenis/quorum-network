@@ -1,0 +1,28 @@
+=============== Mar 30, 2020 (EEST) ===============
+15:21:05.405775 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+15:21:05.417428 db@open opening
+15:21:05.417786 version@stat F·[] S·0B[] Sc·[]
+15:21:05.420708 db@janitor F·2 G·0
+15:21:05.420726 db@open done T·3.281401ms
+=============== Mar 30, 2020 (EEST) ===============
+15:31:08.526499 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+15:31:08.526584 version@stat F·[] S·0B[] Sc·[]
+15:31:08.526590 db@open opening
+15:31:08.526616 journal@recovery F·1
+15:31:08.533604 journal@recovery recovering @1
+15:31:08.544519 memdb@flush created L0@2 N·11 S·832B "H\x9cp..\x9a\xfd\xc6,v5":"\xb2\xad\x88..tL\xe5,v2"
+15:31:08.545989 version@stat F·[1] S·832B[832B] Sc·[0.25]
+15:31:08.548750 db@janitor F·3 G·0
+15:31:08.548775 db@open done T·22.179088ms
+15:40:02.551366 db@close closing
+15:40:02.551435 db@close done T·67.841µs
+=============== Mar 30, 2020 (EEST) ===============
+15:44:08.267853 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+15:44:08.268655 version@stat F·[1] S·832B[832B] Sc·[0.25]
+15:44:08.268664 db@open opening
+15:44:08.268698 journal@recovery F·1
+15:44:08.270928 journal@recovery recovering @3
+15:44:08.282158 memdb@flush created L0@5 N·3 S·266B "Dat..ion,v14":"quo..ive,v13"
+15:44:08.287581 version@stat F·[2] S·1KiB[1KiB] Sc·[0.50]
+15:44:08.291060 db@janitor F·4 G·0
+15:44:08.291081 db@open done T·22.410273ms

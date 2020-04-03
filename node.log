@@ -1,0 +1,347 @@
+WARN [03-30|15:31:08.524] Sanitizing cache to Go's GC limits       provided=1024 updated=666
+DEBUG[03-30|15:31:08.524] Sanitizing Go's GC trigger               percent=100
+INFO [03-30|15:31:08.525] Maximum peer count                       ETH=25 LES=0 total=25
+DEBUG[03-30|15:31:08.525] FS scan times                            list=61.902µs set=3.575µs diff=1.681µs
+TRACE[03-30|15:31:08.525] Started watching keystore folder         path=/home/user/quorum/fromscratch/new-node-1/keystore
+TRACE[03-30|15:31:08.525] Handled keystore changes                 time=57.317µs
+INFO [03-30|15:31:08.526] Starting peer-to-peer node               instance=Geth/v1.8.18-stable-b9e886c4(quorum-v2.5.0)/linux-amd64/go1.12.7
+INFO [03-30|15:31:08.526] Allocated cache and file handles         database=/home/user/quorum/fromscratch/new-node-1/geth/chaindata cache=499 handles=524288
+INFO [03-30|15:31:08.548] Initialised chain configuration          config="{ChainID: 10 Homestead: 0 DAO: <nil> DAOSupport: false EIP150: 0 EIP155: 0 EIP158: 0 Byzantium: 0 IsQuorum: true Constantinople: 0 TransactionSizeLimit: 64 MaxCodeSize: 35 Engine: unknown}"
+WARN [03-30|15:31:08.549] Ethash used in full fake mode 
+INFO [03-30|15:31:08.549] Initialising Ethereum protocol           versions="[63 62]" network=31337
+INFO [03-30|15:31:08.549] Loaded most recent local header          number=0 hash=9c7041…9afdc6 td=0 age=50y11mo3w
+INFO [03-30|15:31:08.549] Loaded most recent local full block      number=0 hash=9c7041…9afdc6 td=0 age=50y11mo3w
+INFO [03-30|15:31:08.549] Loaded most recent local fast block      number=0 hash=9c7041…9afdc6 td=0 age=50y11mo3w
+DEBUG[03-30|15:31:08.549] Reinjecting stale transactions           count=0
+INFO [03-30|15:31:08.549] Regenerated local transaction journal    transactions=0 accounts=0
+DEBUG[03-30|15:31:08.550] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+INFO [03-30|15:31:08.560] starting raft protocol handler 
+INFO [03-30|15:31:08.560] loaded the latest applied index          lastAppliedIndex=0
+INFO [03-30|15:31:08.560] replaying WAL 
+DEBUG[03-30|15:31:08.560] TCP listener up                          addr=[::]:21000
+INFO [03-30|15:31:08.561] New local node record                    seq=1 id=e6e10c055c87273c ip=127.0.0.1 udp=0 tcp=21000
+INFO [03-30|15:31:08.561] Started P2P networking                   self="enode://03baac255086b1807c31718a59729b6fdade485a769ee22060ecc00c4e94d3239814e42845ed07a714d79f28b9424c1a064dea578e08057d43d70aba20580e58@127.0.0.1:21000?discport=0"
+WARN [03-30|15:31:08.561] Removing static dial candidate           id=0x935360         addr=192.168.1.41:21000 err="is self"
+INFO [03-30|15:31:08.568] loading WAL                              term=0 index=0
+INFO [03-30|15:31:08.568] startRaft                                raft ID=1
+INFO [03-30|15:31:08.568] starting a new raft log                  initial cluster size of=1
+raft2020/03/30 15:31:08 INFO: newRaft storagehardState{0 0 0 []} confState{[] [] []}
+raft2020/03/30 15:31:08 INFO: newRaft config.peers[] config.learners[]
+raft2020/03/30 15:31:08 INFO: 1 became follower at term 0
+raft2020/03/30 15:31:08 INFO: newRaft 1 learner: false [peers: [], term: 0, commit: 0, applied: 0, lastindex: 0, lastterm: 0]
+raft2020/03/30 15:31:08 INFO: 1 became follower at term 1
+INFO [03-30|15:31:08.568] raft node started 
+DEBUG[03-30|15:31:08.568] InProc registered                        service=&{node:0xc0000f0000} namespace=admin
+DEBUG[03-30|15:31:08.568] InProc registered                        service=&{node:0xc0000f0000} namespace=admin
+DEBUG[03-30|15:31:08.568] InProc registered                        service="&{mu:{state:0 sema:0} cpuW:<nil> cpuFile: traceW:<nil> traceFile:}" namespace=debug
+DEBUG[03-30|15:31:08.568] InProc registered                        service=&{node:0xc0000f0000}                                                 namespace=debug
+DEBUG[03-30|15:31:08.568] InProc registered                        service=&{stack:0xc0000f0000}                                                namespace=web3
+DEBUG[03-30|15:31:08.568] InProc registered                        service=&{b:0xc00037af60}                                                    namespace=eth
+DEBUG[03-30|15:31:08.568] InProc registered                        service=&{b:0xc00037af60}                                                    namespace=eth
+DEBUG[03-30|15:31:08.568] InProc registered                        service="&{b:0xc00037af60 nonceLock:0xc000040450}"                           namespace=eth
+DEBUG[03-30|15:31:08.569] InProc registered                        service=&{b:0xc00037af60}                                                    namespace=txpool
+DEBUG[03-30|15:31:08.569] InProc registered                        service=&{b:0xc00037af60}                                                    namespace=debug
+DEBUG[03-30|15:31:08.569] InProc registered                        service=&{b:0xc00037af60}                                                    namespace=debug
+DEBUG[03-30|15:31:08.569] InProc registered                        service=&{am:0xc0000a4d00}                                                   namespace=eth
+DEBUG[03-30|15:31:08.569] InProc registered                        service="&{am:0xc0000a4d00 nonceLock:0xc000040450 b:0xc00037af60}"           namespace=personal
+DEBUG[03-30|15:31:08.569] InProc registered                        service=&{ethash:0xc0001f6380}                                               namespace=eth
+DEBUG[03-30|15:31:08.569] InProc registered                        service=&{ethash:0xc0001f6380}                                               namespace=ethash
+DEBUG[03-30|15:31:08.569] InProc registered                        service=&{e:0xc0001f6540}                                                    namespace=eth
+DEBUG[03-30|15:31:08.569] InProc registered                        service=&{e:0xc0001f6540}                                                    namespace=eth
+DEBUG[03-30|15:31:08.569] InProc registered                        service="&{d:0xc0000bd380 mux:0xc00009ab10 installSyncSubscription:0xc00024fe00 uninstallSyncSubscription:0xc00024fe60}" namespace=eth
+DEBUG[03-30|15:31:08.569] InProc registered                        service=&{e:0xc0001f6540}                                                                                                namespace=miner
+DEBUG[03-30|15:31:08.569] InProc registered                        service="&{backend:0xc00037af60 mux:0xc00009ab10 quit:<nil> chainDb:0xc00026f6b0 events:0xc0004f6e60 filtersMu:{state:0 sema:0} filters:map[]}" namespace=eth
+DEBUG[03-30|15:31:08.569] InProc registered                        service=&{eth:0xc0001f6540}                                                                                                                     namespace=admin
+DEBUG[03-30|15:31:08.569] InProc registered                        service=&{eth:0xc0001f6540}                                                                                                                     namespace=debug
+INFO [03-30|15:31:08.569] confChange                               confState="{Nodes:[1] Learners:[] XXX_unrecognized:[]}"
+INFO [03-30|15:31:08.569] ConfChangeAddNode                        raft id=1
+INFO [03-30|15:31:08.569] ignoring expected ConfChangeAddNode for initial peer raft id=1
+INFO [03-30|15:31:08.569] start snapshot                           applied index=0 last snapshot index=0
+DEBUG[03-30|15:31:08.569] InProc registered                        service="&{config:0xc00026f810 eth:0xc0001f6540}"                                                                                               namespace=debug
+DEBUG[03-30|15:31:08.569] InProc registered                        service="&{net:0xc0000f0780 networkVersion:31337}"                                                                                              namespace=net
+DEBUG[03-30|15:31:08.569] InProc registered                        service=&{raftService:0xc0000f6900}                                                                                                             namespace=raft
+DEBUG[03-30|15:31:08.569] IPC registered                           namespace=admin
+DEBUG[03-30|15:31:08.569] IPC registered                           namespace=admin
+DEBUG[03-30|15:31:08.569] IPC registered                           namespace=debug
+DEBUG[03-30|15:31:08.570] IPC registered                           namespace=debug
+DEBUG[03-30|15:31:08.570] IPC registered                           namespace=web3
+DEBUG[03-30|15:31:08.570] IPC registered                           namespace=eth
+DEBUG[03-30|15:31:08.570] IPC registered                           namespace=eth
+DEBUG[03-30|15:31:08.570] IPC registered                           namespace=eth
+DEBUG[03-30|15:31:08.570] IPC registered                           namespace=txpool
+DEBUG[03-30|15:31:08.570] IPC registered                           namespace=debug
+DEBUG[03-30|15:31:08.570] IPC registered                           namespace=debug
+DEBUG[03-30|15:31:08.570] IPC registered                           namespace=eth
+DEBUG[03-30|15:31:08.570] IPC registered                           namespace=personal
+DEBUG[03-30|15:31:08.570] IPC registered                           namespace=eth
+DEBUG[03-30|15:31:08.570] IPC registered                           namespace=ethash
+DEBUG[03-30|15:31:08.570] IPC registered                           namespace=eth
+DEBUG[03-30|15:31:08.570] IPC registered                           namespace=eth
+DEBUG[03-30|15:31:08.570] IPC registered                           namespace=eth
+DEBUG[03-30|15:31:08.570] IPC registered                           namespace=miner
+DEBUG[03-30|15:31:08.570] IPC registered                           namespace=eth
+DEBUG[03-30|15:31:08.570] IPC registered                           namespace=admin
+DEBUG[03-30|15:31:08.570] IPC registered                           namespace=debug
+DEBUG[03-30|15:31:08.570] IPC registered                           namespace=debug
+DEBUG[03-30|15:31:08.570] IPC registered                           namespace=net
+DEBUG[03-30|15:31:08.570] IPC registered                           namespace=raft
+INFO [03-30|15:31:08.570] IPC endpoint opened                      url=/home/user/quorum/fromscratch/new-node-1/geth.ipc
+DEBUG[03-30|15:31:08.570] HTTP registered                          namespace=admin
+DEBUG[03-30|15:31:08.570] HTTP registered                          namespace=admin
+DEBUG[03-30|15:31:08.570] HTTP registered                          namespace=debug
+DEBUG[03-30|15:31:08.570] HTTP registered                          namespace=debug
+DEBUG[03-30|15:31:08.570] HTTP registered                          namespace=web3
+DEBUG[03-30|15:31:08.570] HTTP registered                          namespace=eth
+DEBUG[03-30|15:31:08.570] HTTP registered                          namespace=eth
+INFO [03-30|15:31:08.570] compacted log                            index=0
+INFO [03-30|15:31:08.570] persisted the latest applied index       index=1
+DEBUG[03-30|15:31:08.571] HTTP registered                          namespace=eth
+DEBUG[03-30|15:31:08.571] HTTP registered                          namespace=txpool
+DEBUG[03-30|15:31:08.571] HTTP registered                          namespace=debug
+DEBUG[03-30|15:31:08.571] HTTP registered                          namespace=debug
+DEBUG[03-30|15:31:08.571] HTTP registered                          namespace=eth
+DEBUG[03-30|15:31:08.571] HTTP registered                          namespace=personal
+DEBUG[03-30|15:31:08.571] HTTP registered                          namespace=eth
+DEBUG[03-30|15:31:08.571] HTTP registered                          namespace=eth
+DEBUG[03-30|15:31:08.571] HTTP registered                          namespace=eth
+DEBUG[03-30|15:31:08.571] HTTP registered                          namespace=eth
+DEBUG[03-30|15:31:08.571] HTTP registered                          namespace=miner
+DEBUG[03-30|15:31:08.571] HTTP registered                          namespace=eth
+DEBUG[03-30|15:31:08.571] HTTP registered                          namespace=admin
+DEBUG[03-30|15:31:08.571] HTTP registered                          namespace=debug
+DEBUG[03-30|15:31:08.571] HTTP registered                          namespace=debug
+DEBUG[03-30|15:31:08.571] HTTP registered                          namespace=net
+DEBUG[03-30|15:31:08.571] HTTP registered                          namespace=raft
+INFO [03-30|15:31:08.572] HTTP endpoint opened                     url=http://0.0.0.0:22000                              cors= vhosts=localhost
+raft2020/03/30 15:31:10 INFO: 1 is starting a new election at term 1
+raft2020/03/30 15:31:10 INFO: 1 became candidate at term 2
+raft2020/03/30 15:31:10 INFO: 1 received MsgVoteResp from 1 at term 2
+raft2020/03/30 15:31:10 INFO: 1 became leader at term 2
+raft2020/03/30 15:31:10 INFO: raft.node: 1 elected leader 1 at term 2
+INFO [03-30|15:31:10.272] QUORUM-CHECKPOINT                        name=BECAME-MINTER
+INFO [03-30|15:31:10.272] Not minting a new block since there are no pending transactions 
+INFO [03-30|15:31:10.273] persisted the latest applied index       index=2
+INFO [03-30|15:31:10.740] Mapped network port                      proto=tcp extport=21000 intport=21000 interface="UPNP IGDv1-IP1"
+DEBUG[03-30|15:31:28.551] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+TRACE[03-30|15:31:31.425] Accepted connection                      addr=@
+INFO [03-30|15:31:31.509] New local node record                    seq=2 id=e6e10c055c87273c ip=100.70.178.111 udp=0 tcp=21000
+INFO [03-30|15:31:31.510] Etherbase automatically configured       address=0x55f8AFc0681fd701E2f43D145f71f3594b95eD5B
+DEBUG[03-30|15:31:48.551] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[03-30|15:32:08.551] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[03-30|15:32:28.553] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[03-30|15:32:48.557] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[03-30|15:33:08.563] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[03-30|15:33:28.563] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[03-30|15:33:48.565] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[03-30|15:34:08.567] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[03-30|15:34:28.568] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[03-30|15:34:48.572] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[03-30|15:35:08.573] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[03-30|15:35:28.583] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[03-30|15:35:48.584] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[03-30|15:36:08.584] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[03-30|15:36:28.585] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[03-30|15:36:48.585] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[03-30|15:37:08.592] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[03-30|15:37:28.616] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[03-30|15:37:48.617] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[03-30|15:38:08.617] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[03-30|15:38:28.621] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+TRACE[03-30|15:38:33.234] Accepted connection                      addr=@
+DEBUG[03-30|15:38:48.622] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[03-30|15:39:08.624] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[03-30|15:39:28.626] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[03-30|15:39:48.626] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+INFO [03-30|15:40:02.551] Got interrupt, shutting down... 
+INFO [03-30|15:40:02.551] HTTP endpoint closed                     url=http://0.0.0.0:22000
+DEBUG[03-30|15:40:02.551] RPC Server shutdown initiatied 
+INFO [03-30|15:40:02.551] IPC endpoint closed                      endpoint=/home/user/quorum/fromscratch/new-node-1/geth.ipc
+DEBUG[03-30|15:40:02.551] RPC Server shutdown initiatied 
+INFO [03-30|15:40:02.551] Blockchain manager stopped 
+INFO [03-30|15:40:02.551] Stopping Ethereum protocol 
+INFO [03-30|15:40:02.551] Ethereum protocol stopped 
+INFO [03-30|15:40:02.551] Transaction pool stopped 
+INFO [03-30|15:40:02.551] Database closed                          database=/home/user/quorum/fromscratch/new-node-1/geth/chaindata
+INFO [03-30|15:40:02.551] stopping raft protocol handler... 
+INFO [03-30|15:40:02.551] raft protocol handler stopped 
+ERROR[03-30|15:40:02.551] Failed to close database                 database=/home/user/quorum/fromscratch/new-node-1/geth/chaindata err="leveldb: closed"
+INFO [03-30|15:40:02.551] Raft stopped 
+DEBUG[03-30|15:40:02.551] Read error                               err="accept tcp [::]:21000: use of closed network connection"
+TRACE[03-30|15:40:02.551] P2P networking is spinning down 
+DEBUG[03-30|15:40:02.551] Deleting port mapping                    proto=tcp extport=21000 intport=21000 interface="UPNP IGDv1-IP1"
+panic: MustNew: Failed to connect to private transaction manager (/home/user/quorum/fromscratch/new-node-1t/tm.ipc): lstat /home/user/quorum/fromscratch/new-node-1t/tm.ipc: no such file or directory
+
+goroutine 1 [running]:
+github.com/ethereum/go-ethereum/private/privatetransactionmanager.MustNew(0xc00003600f, 0x30, 0xc00003600f)
+	/home/user/quorum/build/_workspace/src/github.com/ethereum/go-ethereum/private/privatetransactionmanager/tx_manager.go:108 +0x190
+github.com/ethereum/go-ethereum/private.FromEnvironmentOrNil(0x13b98cb, 0xe, 0xc000223f48, 0x9f2563)
+	/home/user/quorum/build/_workspace/src/github.com/ethereum/go-ethereum/private/private.go:20 +0x64
+github.com/ethereum/go-ethereum/private.init.ializers()
+	/home/user/quorum/build/_workspace/src/github.com/ethereum/go-ethereum/private/private.go:23 +0x36
+panic: MustNew: Failed to connect to private transaction manager (/home/user/quorum/fromscratch/new-node-1t/tm.ipc): lstat /home/user/quorum/fromscratch/new-node-1t/tm.ipc: no such file or directory
+
+goroutine 1 [running]:
+github.com/ethereum/go-ethereum/private/privatetransactionmanager.MustNew(0xc00003600f, 0x30, 0xc00003600f)
+	/home/user/quorum/build/_workspace/src/github.com/ethereum/go-ethereum/private/privatetransactionmanager/tx_manager.go:108 +0x190
+github.com/ethereum/go-ethereum/private.FromEnvironmentOrNil(0x13b98cb, 0xe, 0xc000233f48, 0x9f2563)
+	/home/user/quorum/build/_workspace/src/github.com/ethereum/go-ethereum/private/private.go:20 +0x64
+github.com/ethereum/go-ethereum/private.init.ializers()
+	/home/user/quorum/build/_workspace/src/github.com/ethereum/go-ethereum/private/private.go:23 +0x36
+WARN [03-30|15:44:08.253] Sanitizing cache to Go's GC limits       provided=1024 updated=666
+DEBUG[03-30|15:44:08.253] Sanitizing Go's GC trigger               percent=100
+INFO [03-30|15:44:08.258] Maximum peer count                       ETH=25 LES=0 total=25
+DEBUG[03-30|15:44:08.259] FS scan times                            list=312.751µs set=12.761µs diff=1.937µs
+TRACE[03-30|15:44:08.259] Started watching keystore folder         path=/home/user/quorum/fromscratch/new-node-1/keystore
+TRACE[03-30|15:44:08.259] Handled keystore changes                 time=662.248µs
+INFO [03-30|15:44:08.266] Starting peer-to-peer node               instance=Geth/v1.8.18-stable-b9e886c4(quorum-v2.5.0)/linux-amd64/go1.12.7
+INFO [03-30|15:44:08.266] Allocated cache and file handles         database=/home/user/quorum/fromscratch/new-node-1/geth/chaindata cache=499 handles=524288
+INFO [03-30|15:44:08.291] Initialised chain configuration          config="{ChainID: 10 Homestead: 0 DAO: <nil> DAOSupport: false EIP150: 0 EIP155: 0 EIP158: 0 Byzantium: 0 IsQuorum: true Constantinople: 0 TransactionSizeLimit: 64 MaxCodeSize: 35 Engine: unknown}"
+WARN [03-30|15:44:08.291] Ethash used in full fake mode 
+INFO [03-30|15:44:08.292] Initialising Ethereum protocol           versions="[63 62]" network=31337
+INFO [03-30|15:44:08.292] Loaded most recent local header          number=0 hash=9c7041…9afdc6 td=0 age=50y11mo3w
+INFO [03-30|15:44:08.292] Loaded most recent local full block      number=0 hash=9c7041…9afdc6 td=0 age=50y11mo3w
+INFO [03-30|15:44:08.292] Loaded most recent local fast block      number=0 hash=9c7041…9afdc6 td=0 age=50y11mo3w
+DEBUG[03-30|15:44:08.292] Reinjecting stale transactions           count=0
+INFO [03-30|15:44:08.292] Loaded local transaction journal         transactions=0 dropped=0
+INFO [03-30|15:44:08.292] Regenerated local transaction journal    transactions=0 accounts=0
+DEBUG[03-30|15:44:08.293] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+INFO [03-30|15:44:08.311] starting raft protocol handler 
+DEBUG[03-30|15:44:08.316] TCP listener up                          addr=[::]:21000
+INFO [03-30|15:44:08.316] New local node record                    seq=3 id=e6e10c055c87273c ip=127.0.0.1 udp=0 tcp=21000
+INFO [03-30|15:44:08.316] Started P2P networking                   self="enode://03baac255086b1807c31718a59729b6fdade485a769ee22060ecc00c4e94d3239814e42845ed07a714d79f28b9424c1a064dea578e08057d43d70aba20580e58@127.0.0.1:21000?discport=0"
+WARN [03-30|15:44:08.316] Removing static dial candidate           id=0x935360         addr=192.168.1.41:21000 err="is self"
+INFO [03-30|15:44:08.317] loaded the latest applied index          lastAppliedIndex=2
+INFO [03-30|15:44:08.317] loading snapshot 
+INFO [03-30|15:44:08.317] applying snapshot to raft storage 
+INFO [03-30|15:44:08.317] updating cluster membership per raft snapshot 
+INFO [03-30|15:44:08.317] updated cluster membership 
+INFO [03-30|15:44:08.317] blockchain is caught up; no need to synchronize 
+INFO [03-30|15:44:08.317] replaying WAL 
+INFO [03-30|15:44:08.317] loading WAL                              term=0 index=0
+ERROR[03-30|15:44:08.320] error decoding block:                    err=EOF
+INFO [03-30|15:44:08.320] startRaft                                raft ID=1
+INFO [03-30|15:44:08.320] remounting an existing raft log; connecting to peers. 
+raft2020/03/30 15:44:08 INFO: newRaft storagehardState{2 1 2 []} confState{[1] [] []}
+raft2020/03/30 15:44:08 INFO: newRaft config.peers[1] config.learners[]
+raft2020/03/30 15:44:08 INFO: 1 became follower at term 2
+raft2020/03/30 15:44:08 INFO: newRaft 1 learner: false [peers: [1], term: 2, commit: 2, applied: 2, lastindex: 2, lastterm: 2]
+INFO [03-30|15:44:08.320] raft node started 
+DEBUG[03-30|15:44:08.320] InProc registered                        service=&{node:0xc0000f0a00} namespace=admin
+DEBUG[03-30|15:44:08.320] InProc registered                        service=&{node:0xc0000f0a00} namespace=admin
+DEBUG[03-30|15:44:08.320] InProc registered                        service="&{mu:{state:0 sema:0} cpuW:<nil> cpuFile: traceW:<nil> traceFile:}" namespace=debug
+DEBUG[03-30|15:44:08.320] InProc registered                        service=&{node:0xc0000f0a00}                                                 namespace=debug
+DEBUG[03-30|15:44:08.320] InProc registered                        service=&{stack:0xc0000f0a00}                                                namespace=web3
+DEBUG[03-30|15:44:08.320] InProc registered                        service=&{b:0xc00000e360}                                                    namespace=eth
+DEBUG[03-30|15:44:08.320] InProc registered                        service=&{b:0xc00000e360}                                                    namespace=eth
+DEBUG[03-30|15:44:08.320] InProc registered                        service="&{b:0xc00000e360 nonceLock:0xc000041190}"                           namespace=eth
+DEBUG[03-30|15:44:08.320] InProc registered                        service=&{b:0xc00000e360}                                                    namespace=txpool
+DEBUG[03-30|15:44:08.320] InProc registered                        service=&{b:0xc00000e360}                                                    namespace=debug
+DEBUG[03-30|15:44:08.320] InProc registered                        service=&{b:0xc00000e360}                                                    namespace=debug
+DEBUG[03-30|15:44:08.320] InProc registered                        service=&{am:0xc000245380}                                                   namespace=eth
+DEBUG[03-30|15:44:08.320] InProc registered                        service="&{am:0xc000245380 nonceLock:0xc000041190 b:0xc00000e360}"           namespace=personal
+DEBUG[03-30|15:44:08.320] InProc registered                        service=&{ethash:0xc0001f6700}                                               namespace=eth
+DEBUG[03-30|15:44:08.320] InProc registered                        service=&{ethash:0xc0001f6700}                                               namespace=ethash
+DEBUG[03-30|15:44:08.320] InProc registered                        service=&{e:0xc0001f68c0}                                                    namespace=eth
+DEBUG[03-30|15:44:08.320] InProc registered                        service=&{e:0xc0001f68c0}                                                    namespace=eth
+DEBUG[03-30|15:44:08.320] InProc registered                        service="&{d:0xc0000bc4e0 mux:0xc0004f3a10 installSyncSubscription:0xc0001d5c20 uninstallSyncSubscription:0xc0001d5c80}" namespace=eth
+DEBUG[03-30|15:44:08.320] InProc registered                        service=&{e:0xc0001f68c0}                                                                                                namespace=miner
+DEBUG[03-30|15:44:08.321] InProc registered                        service="&{backend:0xc00000e360 mux:0xc0004f3a10 quit:<nil> chainDb:0xc00026f810 events:0xc00029da40 filtersMu:{state:0 sema:0} filters:map[]}" namespace=eth
+DEBUG[03-30|15:44:08.321] InProc registered                        service=&{eth:0xc0001f68c0}                                                                                                                     namespace=admin
+DEBUG[03-30|15:44:08.321] InProc registered                        service=&{eth:0xc0001f68c0}                                                                                                                     namespace=debug
+DEBUG[03-30|15:44:08.321] InProc registered                        service="&{config:0xc00026f8c0 eth:0xc0001f68c0}"                                                                                               namespace=debug
+DEBUG[03-30|15:44:08.321] InProc registered                        service="&{net:0xc0000f0c80 networkVersion:31337}"                                                                                              namespace=net
+DEBUG[03-30|15:44:08.321] InProc registered                        service=&{raftService:0xc000253000}                                                                                                             namespace=raft
+DEBUG[03-30|15:44:08.321] IPC registered                           namespace=admin
+DEBUG[03-30|15:44:08.321] IPC registered                           namespace=admin
+DEBUG[03-30|15:44:08.321] IPC registered                           namespace=debug
+DEBUG[03-30|15:44:08.321] IPC registered                           namespace=debug
+DEBUG[03-30|15:44:08.321] IPC registered                           namespace=web3
+DEBUG[03-30|15:44:08.321] IPC registered                           namespace=eth
+DEBUG[03-30|15:44:08.321] IPC registered                           namespace=eth
+DEBUG[03-30|15:44:08.321] IPC registered                           namespace=eth
+DEBUG[03-30|15:44:08.321] IPC registered                           namespace=txpool
+DEBUG[03-30|15:44:08.321] IPC registered                           namespace=debug
+DEBUG[03-30|15:44:08.321] IPC registered                           namespace=debug
+DEBUG[03-30|15:44:08.321] IPC registered                           namespace=eth
+DEBUG[03-30|15:44:08.321] IPC registered                           namespace=personal
+DEBUG[03-30|15:44:08.321] IPC registered                           namespace=eth
+DEBUG[03-30|15:44:08.321] IPC registered                           namespace=ethash
+DEBUG[03-30|15:44:08.321] IPC registered                           namespace=eth
+DEBUG[03-30|15:44:08.321] IPC registered                           namespace=eth
+DEBUG[03-30|15:44:08.321] IPC registered                           namespace=eth
+DEBUG[03-30|15:44:08.321] IPC registered                           namespace=miner
+DEBUG[03-30|15:44:08.321] IPC registered                           namespace=eth
+DEBUG[03-30|15:44:08.321] IPC registered                           namespace=admin
+DEBUG[03-30|15:44:08.321] IPC registered                           namespace=debug
+DEBUG[03-30|15:44:08.321] IPC registered                           namespace=debug
+DEBUG[03-30|15:44:08.321] IPC registered                           namespace=net
+DEBUG[03-30|15:44:08.321] IPC registered                           namespace=raft
+INFO [03-30|15:44:08.321] IPC endpoint opened                      url=/home/user/quorum/fromscratch/new-node-1/geth.ipc
+DEBUG[03-30|15:44:08.321] HTTP registered                          namespace=admin
+DEBUG[03-30|15:44:08.321] HTTP registered                          namespace=admin
+DEBUG[03-30|15:44:08.321] HTTP registered                          namespace=debug
+DEBUG[03-30|15:44:08.321] HTTP registered                          namespace=debug
+DEBUG[03-30|15:44:08.321] HTTP registered                          namespace=web3
+DEBUG[03-30|15:44:08.321] HTTP registered                          namespace=eth
+DEBUG[03-30|15:44:08.321] HTTP registered                          namespace=eth
+DEBUG[03-30|15:44:08.321] HTTP registered                          namespace=eth
+DEBUG[03-30|15:44:08.321] HTTP registered                          namespace=txpool
+DEBUG[03-30|15:44:08.321] HTTP registered                          namespace=debug
+DEBUG[03-30|15:44:08.321] HTTP registered                          namespace=debug
+DEBUG[03-30|15:44:08.321] HTTP registered                          namespace=eth
+DEBUG[03-30|15:44:08.321] HTTP registered                          namespace=personal
+DEBUG[03-30|15:44:08.321] HTTP registered                          namespace=eth
+DEBUG[03-30|15:44:08.321] HTTP registered                          namespace=eth
+DEBUG[03-30|15:44:08.321] HTTP registered                          namespace=eth
+DEBUG[03-30|15:44:08.321] HTTP registered                          namespace=eth
+DEBUG[03-30|15:44:08.321] HTTP registered                          namespace=miner
+DEBUG[03-30|15:44:08.321] HTTP registered                          namespace=eth
+DEBUG[03-30|15:44:08.321] HTTP registered                          namespace=admin
+DEBUG[03-30|15:44:08.321] HTTP registered                          namespace=debug
+DEBUG[03-30|15:44:08.321] HTTP registered                          namespace=debug
+DEBUG[03-30|15:44:08.321] HTTP registered                          namespace=net
+DEBUG[03-30|15:44:08.321] HTTP registered                          namespace=raft
+INFO [03-30|15:44:08.322] HTTP endpoint opened                     url=http://0.0.0.0:22000                              cors= vhosts=localhost
+raft2020/03/30 15:44:10 INFO: 1 is starting a new election at term 2
+raft2020/03/30 15:44:10 INFO: 1 became candidate at term 3
+raft2020/03/30 15:44:10 INFO: 1 received MsgVoteResp from 1 at term 3
+raft2020/03/30 15:44:10 INFO: 1 became leader at term 3
+raft2020/03/30 15:44:10 INFO: raft.node: 1 elected leader 1 at term 3
+INFO [03-30|15:44:10.125] QUORUM-CHECKPOINT                        name=BECAME-MINTER
+INFO [03-30|15:44:10.125] Not minting a new block since there are no pending transactions 
+INFO [03-30|15:44:10.125] persisted the latest applied index       index=3
+INFO [03-30|15:44:10.476] Mapped network port                      proto=tcp extport=21000 intport=21000 interface="UPNP IGDv1-IP1"
+TRACE[03-30|15:44:12.102] Accepted connection                      addr=@
+INFO [03-30|15:44:12.184] Etherbase automatically configured       address=0x55f8AFc0681fd701E2f43D145f71f3594b95eD5B
+DEBUG[03-30|15:44:28.297] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[03-30|15:44:48.298] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[03-30|15:45:08.298] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[03-30|15:45:28.299] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[03-30|15:45:48.300] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[03-30|15:46:08.300] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[03-30|15:46:28.300] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[04-03|14:19:28.263] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[04-03|14:19:48.266] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[04-03|14:20:08.266] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[04-03|14:20:28.266] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[04-03|14:20:48.267] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[04-03|14:21:08.267] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[04-03|14:21:28.267] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[04-03|14:21:48.269] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[04-03|14:22:08.269] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[04-03|14:22:28.270] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[04-03|14:22:48.270] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[04-03|14:23:08.271] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[04-03|14:23:28.272] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[04-03|14:23:48.273] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[04-03|14:24:08.273] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[04-03|14:24:28.279] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[04-03|14:24:48.280] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[04-03|14:25:08.280] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[04-03|14:25:28.281] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[04-03|14:25:48.282] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[04-03|14:26:08.283] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[04-03|14:26:28.286] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[04-03|14:26:48.286] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[04-03|14:27:08.287] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
+DEBUG[04-03|14:27:28.288] Recalculated downloader QoS values       rtt=20s confidence=1.000 ttl=1m0s
