@@ -1,0 +1,61 @@
+############# Basic packets ###########################
+sudo apt-get install -y software-properties-common
+sudo add-apt-repository -y ppa:ethereum/ethereum
+sudo apt-get update
+sudo apt-get -y install ethereum
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+sudo apt-get update
+sudo apt-get install -y docker-ce
+sudo usermod -a -G docker $USER
+sudo reboot
+
+
+######### Docker images GO Geth env ################
+docker pull quorumengineering/quorum
+docker pull quorumengineering/tessera
+docker pull quorumengineering/constellation
+sudo apt-get update
+sudo apt-get -y upgrade
+wget https://dl.google.com/go/go1.12.7.linux-amd64.tar.gz
+sudo tar -xvf go1.12.7.linux-amd64.tar.gz
+sudo mv go /usr/local
+export GOROOT=/usr/local/go
+export GOPATH=$HOME/Projects/Proj1
+export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
+go version
+go env
+git clone https://github.com/jpmorganchase/quorum.git
+sudo apt-get install -y make
+sudo apt-get install -y build-essential
+cd quorum 
+make all  
+
+##################### Add at the end of ~/.bashrc the following ############
+export GOROOT=/usr/local/go
+export GOPATH=$HOME/Projects/Proj1
+export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
+export PATH=/home/user/quorum/build/bin:$PATH
+
+####################### Create the network  #########################
+mkdir fromscratch
+cd fromscratch 
+mkdir new-node-1
+geth --datadir new-node-1 account new
+ls new-node-1/keystore
+nano genesis.json
+bootnode --genkey=nodekey
+cp nodekey new-node-1/
+bootnode --nodekey=new-node-1/nodekey --writeaddress > new-node-1/enode
+cat new-node-1/enode
+nano static-nodes.json
+cp static-nodes.json new-node-1
+geth --datadir new-node-1 init genesis.json
+nano startnode1.sh
+
+#!/bin/bash
+PRIVATE_CONFIG=ignore nohup geth --datadir new-node-1 --nodiscover --verbosity 5 --networkid 31337 --raft --raftport 50000 --rpc --rpcaddr 0.0.0.0 --rpcport 22000 --rpcapi admin,db,eth,debug,miner,net,shh,txpool,personal,web3,quorum,raft --emitcheckpoints --port 21000 >> node.log 2>&1 &
+
+chmod +x startnode1.sh
+./startnode1.sh
+geth attach new-node-1/geth.ipc
