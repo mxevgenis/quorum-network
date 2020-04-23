@@ -350,7 +350,7 @@ nano config.json
 
            "enabled": true, 
 
-           "serverAddress": "http://localhost:9081", 
+           "serverAddress": "http://ip_of_this_node:9081", 
 
            "communicationType" : "REST" 
 
@@ -374,7 +374,7 @@ nano config.json
 
            "enabled": true, 
 
-           "serverAddress":"http://localhost:9001", 
+           "serverAddress":"http://ip_of_this_node:9001", 
 
            "sslConfig": { 
 
@@ -392,13 +392,13 @@ nano config.json
 
        { 
 
-           "url": "http://localhost:9001" 
+           "url": "http://ip_of_this_node:9001" 
 
        }, 
 
        { 
 
-           "url": "http://localhost:9003" 
+           "url": "http://ip_of_the_other_node:9003" 
 
        } 
 
@@ -738,7 +738,7 @@ nano config.json
 
            "enabled": true, 
 
-           "serverAddress": "http://localhost:9081", 
+           "serverAddress": "http://ip_of_this_node:9081", 
 
            "communicationType" : "REST" 
 
@@ -762,7 +762,7 @@ nano config.json
 
            "enabled": true, 
 
-           "serverAddress":"http://localhost:9001", 
+           "serverAddress":"http://ip_of_this_node:9003", 
 
            "sslConfig": { 
 
@@ -780,13 +780,13 @@ nano config.json
 
        { 
 
-           "url": "http://localhost:9001" 
+           "url": "http://ip_of_the_other_node:9001" 
 
        }, 
 
        { 
 
-           "url": "http://localhost:9003" 
+           "url": "http://ip_of_this_node:9003" 
 
        } 
 
