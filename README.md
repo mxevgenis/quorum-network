@@ -304,7 +304,7 @@ wget https://oss.sonatype.org/service/local/repositories/releases/content/com/jp
 
 mv tessera-app-0.10.4-app.jar tessera.jar 
 
-if you want to now the path of tessera.jar run pwd. 
+if you want to know the path of tessera.jar run pwd. 
 
 Inside the directory fromscratch do the following: 
 
